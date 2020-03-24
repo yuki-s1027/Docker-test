@@ -1,3 +1,44 @@
-// Place all the styles related to the homes controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.main--header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  width: 100vw;
+  height: 80px;
+  line-height: 80px;
+  background-color: whitesmoke;
+  &__left {
+    font-weight: bold;
+  }
+  &__right {
+    .header-links {
+      margin-left: 20px;
+      text-decoration: none;
+      color: black;
+      &:hover {
+        color: lightskyblue;
+      }
+    }
+  }
+}
+
+.home--main {
+  display: flex;
+  justify-content: space-between;
+  .side--bar {
+    width: 250px;
+    height: calc(100vh - 80px);
+    background-color: lightskyblue;
+    &__top {
+
+    }
+  }
+  .select--field {
+    width: calc(100vw - 250px);
+    height: calc(100vh - 80px);
+    background-color: mintcream;
+    padding: 80px;
+    & li {
+      margin-bottom: 30px;
+    }
+  }
+}

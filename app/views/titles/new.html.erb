@@ -1,0 +1,24 @@
+<div class="new--title">
+  <h2>問題の作成</h2>
+  <%= form_for @title do |f|  %>
+
+    <div class="field">
+      <%= f.label "作成者" %>
+      <%= f.text_field :name %>
+    </div>
+
+    <div class="field">
+      <%= f.label "タイトル" %>
+      <%= f.text_field :text %>
+    </div>
+
+    <div class="field">
+      <%= f.label "画像" %>
+      <%= f.file_field :image %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "作成"%>
+    </div>
+  <% end %>
+</div>
